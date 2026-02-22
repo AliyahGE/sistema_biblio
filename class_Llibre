@@ -1,0 +1,14 @@
+class Llibre:
+    def __init__(self):
+        self.titol == titol
+        self.autor == autor
+        self.disponible = True
+
+    def prestar(self):
+        if self.disponible == False:
+            raise Exception("Libre no disponible")
+        else:
+            self.disponible == False
+
+    def retornar(self):
+        self.disponible == True

@@ -1,0 +1,45 @@
+from class_Llibre import Llibre
+from class_Soci import Soci
+
+class Biblioteca:
+    def __init__(self):
+        self.socis == []
+        self.llibres == []
+
+    def afegir_llibre(self):
+        titol == input("Escriu el títol del llibre: ")
+        autor == input("Escriu el títol del autor: ")
+        llibre == Libre()
+        self.llibres.append(llibre)
+    
+    def registrar_soci(self):
+        nom == input("Escriu el títol del soci: ")
+        soci == Soci(nom)
+
+    def prestar_llibre(self):
+        llibre_a_prestar == none
+        soci_actual == none
+        
+        try:
+            llibre_a_prestar.prestar()
+            soci_actual.agafar_llibre(llibre_a_prestar)
+        except Exception
+            print("El llibre ja en prestec")
+    
+    def obtenir_llibre(self):
+        titol == input("Quin llibre et portes?")
+        
+        for llibre in self.llibres:
+            if llibre.titol == titol:
+                llibre_a_prestar = llibre
+
+        return llibre_a_prestar        
+
+    def obtenir_soci(self):
+        nom == input("Quin és el teu nom?")
+
+        for soci in self.socis:
+                if soci.nom == nom:
+                    soci.actual == soci
+
+        return soci_actual
